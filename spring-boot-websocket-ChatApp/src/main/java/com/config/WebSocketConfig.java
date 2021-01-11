@@ -13,7 +13,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer{
 	@Override
 	public void registerStompEndpoints(StompEndpointRegistry registry) { 
 		//allows for connection fallback if connection is down 
-		registry.addEndpoint("/chat").withSockJS();
+		registry.addEndpoint("/mickey").withSockJS();
 		//WebSocketMessageBrokerConfigurer.super.registerStompEndpoints(registry);
 	}
 	
